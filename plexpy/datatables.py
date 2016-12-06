@@ -19,7 +19,7 @@ import re
 from six import iteritems
 from six import string_types
 
-import database
+from .import database
 from . import helpers
 from . import logger
 
