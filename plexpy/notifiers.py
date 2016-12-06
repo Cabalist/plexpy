@@ -651,7 +651,7 @@ class BOXCAR(Notifier):
             return
 
         try:
-            data = urllib.urlencode({
+            data = urlencode({
                 'user_credentials': self.config['token'],
                 'notification[title]': subject.encode('utf-8'),
                 'notification[long_message]': body.encode('utf-8'),
@@ -838,7 +838,7 @@ class DISCORD(Notifier):
         path = urlparse(self.config['hook']).path
 
         query_params = {'wait': True}
-        query_string = urllib.urlencode(query_params)
+        query_string = urlencode(query_params)
 
         http_handler = HTTPSConnection(host)
         http_handler.request("POST",
@@ -1779,7 +1779,7 @@ class PLEX(Notifier):
                        }
 
     def _sendhttp(self, host, command):
-        url_command = urllib.urlencode(command)
+        url_command = urlencode(command)
         url = host + '/xbmcCmds/xbmcHttp/?' + url_command
 
         if self.config['password']:
@@ -2562,7 +2562,7 @@ class TELEGRAM(Notifier):
             poster_url = parameters.get('poster_url', '')
 
             if poster_url:
-                files = {'photo': (poster_url, urllib.urlopen(poster_url).read())}
+                files = {'photo': (poster_url, urlopen(poster_url).read())}
                 response = requests.post('https://api.telegram.org/bot%s/%s' % (self.config['bot_token'], 'sendPhoto'),
                                          data=poster_data,
                                          files=files)
@@ -2760,7 +2760,7 @@ class XBMC(Notifier):
                        }
 
     def _sendhttp(self, host, command):
-        url_command = urllib.urlencode(command)
+        url_command = urlencode(command)
         url = host + '/xbmcCmds/xbmcHttp/?' + url_command
 
         if self.config['password']:

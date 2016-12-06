@@ -179,7 +179,7 @@ def initialize(config_file):
         CURRENT_VERSION, CONFIG.GIT_REMOTE, CONFIG.GIT_BRANCH = versioncheck.getVersion()
 
         # Write current version to a file, so we know which version did work.
-        # This allowes one to restore to that version. The idea is that if we
+        # This allows one to restore to that version. The idea is that if we
         # arrive here, most parts of PlexPy seem to work.
         if CURRENT_VERSION:
             version_lock_file = os.path.join(DATA_DIR, "version.lock")

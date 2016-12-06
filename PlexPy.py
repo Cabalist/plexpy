@@ -227,7 +227,7 @@ def main():
         plexpy.launch_browser(plexpy.CONFIG.HTTP_HOST, http_port,
                               plexpy.CONFIG.HTTP_ROOT)
 
-    # Wait endlessy for a signal to happen
+    # Wait endlessly for a signal to happen
     while True:
         if not plexpy.SIGNAL:
             try:
