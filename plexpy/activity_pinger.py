@@ -18,15 +18,15 @@ import threading
 import time
 
 import plexpy
-import activity_processor
-import database
-import helpers
-import libraries
-import logger
-import notification_handler
-import plextv
-import pmsconnect
-import web_socket
+from . import activity_processor
+from . import database
+from . import helpers
+from . import libraries
+from . import logger
+from . import notification_handler
+from . import plextv
+from . import pmsconnect
+from . import web_socket
 
 monitor_lock = threading.Lock()
 ext_ping_count = 0

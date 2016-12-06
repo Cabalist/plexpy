@@ -23,7 +23,7 @@ import time
 import arrow
 
 import plexpy
-import logger
+from . import logger
 
 FILENAME = "plexpy.db"
 db_lock = threading.Lock()

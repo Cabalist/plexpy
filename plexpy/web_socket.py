@@ -23,10 +23,10 @@ import time
 import websocket
 
 import plexpy
-import activity_handler
-import activity_pinger
-import activity_processor
-import logger
+from . import activity_handler
+from . import activity_pinger
+from . import activity_processor
+from . import logger
 
 name = 'websocket'
 opcode_data = (websocket.ABNF.OPCODE_TEXT, websocket.ABNF.OPCODE_BINARY)

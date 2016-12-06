@@ -30,30 +30,30 @@ from six import string_types
 from six import text_type
 
 import plexpy
-import common
-import config
-import database
-import datafactory
-import graphs
-import helpers
-import http_handler
-import libraries
-import log_reader
-import logger
-import notification_handler
-import notifiers
-import plexivity_import
-import plextv
-import plexwatch_import
-import pmsconnect
-import users
-import versioncheck
-import web_socket
-from api2 import API2
-from helpers import addtoapi, build_datatables_json, checked, create_https_certificates, get_ip
-from lib.hashing_passwords import make_hash
-from session import allow_session_library, allow_session_user, get_session_info, get_session_user_id
-from webauth import AuthController, member_of, requireAuth
+from . import common
+from . import config
+from . import database
+from . import datafactory
+from . import graphs
+from . import helpers
+from . import http_handler
+from . import libraries
+from . import log_reader
+from . import logger
+from . import notification_handler
+from . import notifiers
+from . import plexivity_import
+from . import plextv
+from . import plexwatch_import
+from . import pmsconnect
+from . import users
+from . import versioncheck
+from . import web_socket
+from .api2 import API2
+from .helpers import addtoapi, build_datatables_json, checked, create_https_certificates, get_ip
+from .lib.hashing_passwords import make_hash
+from .session import allow_session_library, allow_session_user, get_session_info, get_session_user_id
+from .webauth import AuthController, member_of, requireAuth
 
 
 def serve_template(templatename, **kwargs):

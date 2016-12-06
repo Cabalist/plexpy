@@ -19,12 +19,12 @@ from xml.dom import minidom
 
 import arrow
 
-import activity_processor
-import database
-import helpers
-import logger
-import plextv
-import users
+from . import activity_processor
+from . import database
+from . import helpers
+from . import logger
+from . import plextv
+from . import users
 
 
 def extract_plexivity_xml(xml=None):

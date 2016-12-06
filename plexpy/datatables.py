@@ -20,8 +20,8 @@ from six import iteritems
 from six import string_types
 
 import database
-import helpers
-import logger
+from . import helpers
+from . import logger
 
 
 class DataTables(object):

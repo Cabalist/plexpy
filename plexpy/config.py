@@ -26,7 +26,7 @@ from six import string_types
 from six import text_type
 
 import plexpy
-import logger
+from . import logger
 
 
 def bool_int(value):

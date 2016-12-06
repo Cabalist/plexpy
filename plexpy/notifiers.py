@@ -40,11 +40,11 @@ from six.moves.urllib.parse import urlencode, urlparse
 from six.moves.urllib.request import Request, urlopen
 
 import plexpy
-import database
-import helpers
-import logger
-import request
-from config import _BLACKLIST_KEYS, _WHITELIST_KEYS
+from . import database
+from . import helpers
+from . import logger
+from . import request
+from .config import _BLACKLIST_KEYS, _WHITELIST_KEYS
 
 AGENT_IDS = {'growl': 0,
              'prowl': 1,

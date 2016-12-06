@@ -28,17 +28,17 @@ from six import string_types
 from six import text_type
 
 import plexpy
-import activity_processor
-import common
-import database
-import datafactory
-import helpers
-import libraries
-import logger
-import notifiers
-import plextv
-import pmsconnect
-import users
+from . import activity_processor
+from . import common
+from . import database
+from . import datafactory
+from . import helpers
+from . import libraries
+from . import logger
+from . import notifiers
+from . import plextv
+from . import pmsconnect
+from . import users
 
 
 def process_queue():

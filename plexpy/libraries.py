@@ -20,14 +20,14 @@ import os
 from six import iteritems
 
 import plexpy
-import common
-import database
-import datatables
-import helpers
-import logger
-import plextv
-import pmsconnect
-import session
+from . import common
+from . import database
+from . import datatables
+from . import helpers
+from . import logger
+from . import plextv
+from . import pmsconnect
+from . import session
 
 
 def update_section_ids():

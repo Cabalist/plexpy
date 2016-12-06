@@ -20,10 +20,10 @@ import sys
 import cherrypy
 
 import plexpy
-import logger
-import webauth
-from helpers import create_https_certificates
-from webserve import WebInterface
+from . import logger
+from . import webauth
+from .helpers import create_https_certificates
+from .webserve import WebInterface
 
 
 def initialize(options):

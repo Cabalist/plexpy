@@ -35,16 +35,16 @@ import cherrypy
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.interval import IntervalTrigger
 
-import activity_pinger
-import config
-import database
-import logger
-import notification_handler
-import notifiers
-import plextv
-import pmsconnect
-import versioncheck
-import config
+from . import activity_pinger
+from . import config
+from . import database
+from . import logger
+from . import notification_handler
+from . import notifiers
+from . import plextv
+from . import pmsconnect
+from . import versioncheck
+from . import config
 
 PROG_DIR = None
 FULL_PATH = None

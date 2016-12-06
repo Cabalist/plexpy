@@ -31,11 +31,11 @@ import xmltodict
 from six import iteritems
 
 import plexpy
-import config
-import database
-import logger
-import plextv
-import pmsconnect
+from . import config
+from . import database
+from . import logger
+from . import plextv
+from . import pmsconnect
 
 
 class API2(object):
