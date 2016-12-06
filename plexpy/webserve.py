@@ -4616,6 +4616,7 @@ class WebInterface(object):
             hostname = plexpy.CONFIG.HTTP_HOST
 
         if plexpy.CONFIG.HTTP_PORT not in (80, 443):
+            logger.debug("Appending port: {}".format(plexpy.CONFIG.HTTP_PORT))
             port = ':' + str(plexpy.CONFIG.HTTP_PORT)
         else:
             port = ''
