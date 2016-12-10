@@ -114,6 +114,7 @@ class HTTPHandler(object):
 
             else:
                 logger.warn(u"Failed to access uri endpoint %s. Status code %r" % (uri, request_status))
+                logger.debug(request_content)
                 return None
         else:
             logger.debug(u"HTTP request made but no enpoint given.")
